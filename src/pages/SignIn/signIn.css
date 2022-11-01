@@ -1,0 +1,54 @@
+.signIn{
+    background-image: linear-gradient(to bottom, #a23fc7, #cbb4d4); 
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Comic Sans MS;
+}
+.cart{
+    text-align: center;
+    background-color: #fff;
+    box-shadow:0px 0px 20px 2px #00000068 ;
+    border-radius: 7px;
+    width: 500px;
+    padding: 25px 0;
+}
+
+.cart h1{
+    color: #833471;
+    margin-bottom: 40px;
+}
+
+.cart .signIn-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cart input {
+    border:1px solid #a2a2a2;
+    border-radius: 10px;
+    margin: 15px;
+    padding: 15px;
+    width: 45%;
+    outline: none;
+}
+
+.cart button{
+    margin: 25px 0;
+    padding: 10px 35px;
+    background-color: #833471;
+    color: #FD7272;
+    font-weight: 600;
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.back-icon{
+    font-size: 30px;
+    color:#833471;
+    font-weight:bold;
+}

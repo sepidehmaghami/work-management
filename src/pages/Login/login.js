@@ -9,7 +9,7 @@ function Login (props){
             <h3>Sign in your account</h3>
             <form className='login-form'>
                 <input type="text" placeholder='Enter your username...'/>
-                <ShowHidePassword value={props.pass}/>
+                <ShowHidePassword placeholder={"Enter your password"} value={props.pass}/>
                 <button type="submit">Login</button>
             </form>
             <p><a href='#'>Create Account</a></p>

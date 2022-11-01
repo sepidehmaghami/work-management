@@ -1,6 +1,6 @@
  .form-group{
     position: relative;
-    width: 45%;
+    width: 100%;
  }
 
  .form-group input {
@@ -15,5 +15,5 @@
 .form-group .icon{
     position: absolute;
     top: 30px;
-    right: 0px;
+    right: 135px;
 }
