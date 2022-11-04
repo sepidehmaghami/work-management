@@ -12,9 +12,17 @@
 
 .header ul li{
     margin-right: 50px;
-    font-size: 30px;
+    font-size: 45px;
 }
 
 .header ul li a{
     color:#833471;
+}
+
+@media screen and (max-width:450px) {
+    .header ul li{
+        font-size: 35px;
+        margin-right: 30px;
+    }
+    
 }

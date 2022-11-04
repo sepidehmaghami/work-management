@@ -11,12 +11,26 @@
 
 .clock {
     color: #833471;
-    font-size: 19px;
+    font-size: 25px;
 }
 
 .date {
     color: #833471;
-    font-size: 18px;
+    font-size: 25px;
     margin-top:-5px;
 }
 
+@media screen and (max-width:450px) {
+.main {
+    margin-left: 30px;
+}
+
+    .clock {
+        font-size: 20px;
+    }
+    
+    .date {
+        font-size: 20px;
+    }
+    
+}
