@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Rock Salt';
+    margin-left: 50px;
+    font-weight: bold;
+}
+
+.clock {
+    color: #833471;
+    font-size: 19px;
+}
+
+.date {
+    color: #833471;
+    font-size: 18px;
+    margin-top:-5px;
+}
+
