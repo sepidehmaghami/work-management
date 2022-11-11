@@ -1,6 +1,5 @@
 # Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+`npx create-react-app shoes-stores`
 
 ## Available Scripts
 
@@ -11,14 +10,18 @@ In the project directory, you can run:
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `yarn add react-icons`
-Add react icons
+### Add react icons
+`yarn add react-icons`
 
-### `yarn add bootstrap-icons`
-Add bootstrap icons
 
-### `yarn add jalali-moment`
-Add jalali moment for date conversion
+### Add bootstrap icons
+`yarn add bootstrap-icons`
+
+
+### Add jalali moment for date conversion
+`yarn add jalali-moment`
+
+
+### Used of "React Router 6 
+`yarn add react-router-dom@6`
