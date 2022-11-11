@@ -1,0 +1,24 @@
+.timer-main{
+    background-color: #FD7272;
+    height: 100vh;
+}
+
+.timer-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timer-body H1{
+    color: #833471;
+    font-size: 45px;
+}
+
+.timer-body input{
+    padding: 12px 10px;
+    border: 0px ;
+    border-radius: 5px;
+    width: 20%;
+    outline: none;
+    margin-bottom: 4%;
+}

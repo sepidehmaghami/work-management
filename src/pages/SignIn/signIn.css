@@ -7,7 +7,7 @@
     justify-content: center;
     font-family: Comic Sans MS;
 }
-.cart{
+.cart-signIn{
     text-align: center;
     background-color: #fff;
     box-shadow:0px 0px 20px 2px #00000068 ;
@@ -16,18 +16,18 @@
     padding: 25px 0;
 }
 
-.cart h1{
+.cart-signIn h1{
     color: #833471;
     margin-bottom: 40px;
 }
 
-.cart .signIn-form{
+.cart-signIn .signIn-form{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.cart input {
+.cart-signIn input {
     border:1px solid #a2a2a2;
     border-radius: 10px;
     margin: 15px;
@@ -36,7 +36,7 @@
     outline: none;
 }
 
-.cart button{
+.cart-signIn button{
     margin: 25px 0;
     padding: 10px 35px;
     background-color: #833471;

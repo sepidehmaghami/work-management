@@ -5,7 +5,7 @@ function SignIn (props){
  
   return (
     <section className='signIn'>
-        <div className='cart'>
+        <div className='cart-signIn'>
             <h1>Create Account</h1>
             <form className='signIn-form'>
                 <input type="text" placeholder='Enter your username...'/>

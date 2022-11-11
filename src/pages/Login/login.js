@@ -1,10 +1,13 @@
 import './login.css'
 import ShowHidePassword from '../../components/ShowHidePass/showHidePass'
+import { BsFillPersonFill } from "react-icons/bs";
+
 function Login (props){
  
   return (
     <section className='login'>
-        <div className='cart'>
+        <div className='logo-login'><BsFillPersonFill/></div>
+        <div className='cart-login'>
             <h1>Hello!</h1>
             <h3>Sign in your account</h3>
             <form className='login-form'>
