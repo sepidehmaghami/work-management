@@ -1,8 +1,9 @@
 import './signIn.css'
 import ShowHidePassword from '../../components/ShowHidePass/showHidePass';
 import { AiOutlineArrowLeft } from "react-icons/ai";
-function SignIn (props){
- 
+import {Link} from 'react-router-dom'
+
+function SignIn (props){ 
   return (
     <section className='signIn'>
         <div className='cart-signIn'>
@@ -13,7 +14,7 @@ function SignIn (props){
                 <ShowHidePassword value={props.pass} placeholder={"Repeat your password"}/>
                 <button type="submit">Sign In</button>
             </form>
-            <a href="#"><AiOutlineArrowLeft className='back-icon'/></a>
+            <Link to="/"><AiOutlineArrowLeft className='back-icon'/></Link>
         </div>
     </section>  
   )

@@ -4,32 +4,33 @@ import ToDoList from '../../assets/toDoList.png';
 import Timer from '../../assets/timer.png';
 import Stopwatch from '../../assets/stopwatch.png';
 import './home.css';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
     <div>
-      <Header/>
+      <Header />
       <section className='home'>
         
         <div className='home-cart'>
-          <a href='#' className='toDoList'>
+          <Link to='/to-do-list' className='toDoList'>
             <img src={ToDoList} alt="ToDoList"/>
             <p>To Do List</p>
-          </a>
+          </Link>
         </div>
 
         <div className='home-cart'>
-          <a href='#'>
+          <Link to='/timer'>
             <img src={Timer} alt="Timer"/>
             <p>Timer</p>
-          </a>
+          </Link>
         </div>
 
         <div className='home-cart'>
-          <a href='#'>
+          <Link to='/stopwatch'>
             <img src={Stopwatch} alt="Stopwatch"/>
             <p>Stopwatch</p>
-          </a>
+          </Link>
         </div>
 
       </section>
