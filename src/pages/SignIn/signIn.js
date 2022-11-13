@@ -4,6 +4,9 @@ import { AiOutlineArrowLeft } from "react-icons/ai";
 import {Link} from 'react-router-dom'
 
 function SignIn (props){ 
+  const backToLogin =() =>{
+    
+  }
   return (
     <section className='signIn'>
         <div className='cart-signIn'>
@@ -12,7 +15,7 @@ function SignIn (props){
                 <input type="text" placeholder='Enter your username...'/>
                 <ShowHidePassword value={props.pass} placeholder={"Enter your password"}/>
                 <ShowHidePassword value={props.pass} placeholder={"Repeat your password"}/>
-                <button type="submit">Sign In</button>
+                <button type="submit" onClick={backToLogin}>Sign In</button>
             </form>
             <Link to="/"><AiOutlineArrowLeft className='back-icon'/></Link>
         </div>

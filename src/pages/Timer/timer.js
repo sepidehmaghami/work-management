@@ -3,6 +3,9 @@ import './timer.css'
 import Header from '../../components/Header/header'
 function Timer() {
   const [time,setTime] = useState(false);
+  const [minute , setMinute] = useState(0);
+  const [seconds , setSeconds] = useState(0);
+
   const timerHandler =() =>{
     setTime(!time);
   }

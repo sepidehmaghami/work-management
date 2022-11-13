@@ -23,5 +23,8 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 `yarn add jalali-moment`
 
 
-### Used of "React Router 6 
+### Used of React Router 6 
 `yarn add react-router-dom@6`
+
+### To use the API Add Axios
+`yarn add axios -save`
