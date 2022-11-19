@@ -1,0 +1,43 @@
+.stopwatch-body{
+    background-color: #2C3347;
+    height: 100vh;
+}
+
+.stopwatchController{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2{
+ color: #fff;
+ font-size: 40px;
+}
+
+.icon-stopwatch{
+    color: #F2C94C;
+}
+
+.stopwatch{
+    color: #fff;
+    font-size: 30px;
+    padding: 85px 50px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    margin: 15px 0 60px;
+}
+
+.btnController button{
+    background: none;
+    border: none;
+    font-size: 40px;
+    margin: 0px 10px;
+}
+
+.start , .stop{
+    color: #F2C94C;
+}
+
+.reset{
+    color: #fff;
+}
