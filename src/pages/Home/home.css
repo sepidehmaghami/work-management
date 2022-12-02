@@ -1,12 +1,12 @@
 .home{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     text-align: center;
     margin: 40px 50px;
 }
 
 .home-cart{
-    margin: 25px;
+    margin: 3%;
     box-shadow:0px 0px 12px 1px #0000002b ;
 }
 
@@ -22,21 +22,22 @@
     height: 300px;
 }
 
-@media screen and (max-width:1055px) {
+@media screen and (max-width:660px) {
+    .home-cart img{
+        width: 260px;
+        height: 260px;
+    }
+    
+}
+
+@media screen and (max-width:560px) {
     .home{
         display: block;
     }
 }
 
-@media screen and (max-width:450px) {
-    .home-cart img{
-        width: 190px;
-        height: 190px;
-    }
-    
-}
-
 @media screen and (max-width:335px) {
+    
     .home-cart img{
         width: 90px;
         height: 90px;

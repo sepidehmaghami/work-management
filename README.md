@@ -28,3 +28,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 ### To use the API Add Axios
 `yarn add axios -save`
+
+### Used of Material UI
+`yarn add @material-ui/core`
