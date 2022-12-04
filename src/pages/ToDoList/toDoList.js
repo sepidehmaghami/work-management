@@ -6,6 +6,7 @@ import Modal from '@material-ui/core/Modal';
 import Button from '@material-ui/core/Button';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
+import { AiOutlineClose , AiOutlineDown} from "react-icons/ai";
 function rand() {
   return Math.round(Math.random() * 20) - 10;
 }
@@ -29,6 +30,7 @@ const useStyles = makeStyles((theme) => ({
     border: '2px solid #000',
     boxShadow: theme.shadows[5],
     padding: theme.spacing(2, 4, 3),
+    color: '#2193b0',
   },
 }));
 
@@ -66,50 +68,56 @@ function ToDoList() {
 
   const body = (
     <div style={modalStyle} className={classes.paper}>
-    <div>
-      <Button aria-controls="simple-menu" aria-haspopup="true" onClick={handleClickAction}>
-        Open Menu
-      </Button>
-      <Menu
-        id="simple-menu"
-        anchorEl={anchorEl1}
-        keepMounted
-        open={Boolean(anchorEl1)}
-        onClose={handleCloseAction}
-      >
-        <MenuItem onClick={handleCloseAction}>Profile</MenuItem>
-        <MenuItem onClick={handleCloseAction}>My account</MenuItem>
-        <MenuItem onClick={handleCloseAction}>Logout</MenuItem>
-      </Menu>
-    </div>
-    <div>
-      <input type="text" />
-    </div>
-    <div>
-      <Button aria-controls="simple-menu" aria-haspopup="true" onClick={handleClickDate}>
-        Open Menu
-      </Button>
-      <Menu
-        id="simple-menu"
-        anchorEl={anchorEl2}
-        keepMounted
-        open={Boolean(anchorEl2)}
-        onClose={handleCloseDate}
-      >
-        <MenuItem onClick={handleCloseDate}>Profile</MenuItem>
-        <MenuItem onClick={handleCloseDate}>My account</MenuItem>
-        <MenuItem onClick={handleCloseDate}>Logout</MenuItem>
-      </Menu>
-    </div>      <button onClick={handleClose}>Close</button>
+      <div className='modal'>
+        <div className='manage-to-do'>
+          <div>
+          <Button aria-controls="simple-menu" aria-haspopup="true" onClick={handleClickAction}>
+            Action <AiOutlineDown/>
+          </Button>
+          <Menu
+            id="simple-menu"
+            anchorEl={anchorEl1}
+            keepMounted
+            open={Boolean(anchorEl1)}
+            onClose={handleCloseAction}
+          >
+            <MenuItem onClick={handleCloseAction}>Shopping</MenuItem>
+            <MenuItem onClick={handleCloseAction}>Work</MenuItem>
+            <MenuItem onClick={handleCloseAction}>Sport</MenuItem>
+            <MenuItem onClick={handleCloseAction}>Music</MenuItem>
+          </Menu>
+          </div>
+          <div className='title'>
+            <label>Title</label>
+            <input type="text" />
+          </div>
+          <div>
+        <Button aria-controls="simple-menu" aria-haspopup="true" onClick={handleClickDate}>
+          Date <AiOutlineDown/>
+        </Button>
+        <Menu
+          id="simple-menu"
+          anchorEl={anchorEl2}
+          keepMounted
+          open={Boolean(anchorEl2)}
+          onClose={handleCloseDate}
+        >
+          <MenuItem onClick={handleCloseDate}>Today</MenuItem>
+          <MenuItem onClick={handleCloseDate}>Tomorrow</MenuItem>
+        </Menu>
+          </div>        
+        </div>
+        <button onClick={handleClose} className="add-task">ADD</button>
+      </div>
     </div>
   );
 
   return (
     <div>
       <Header/>
-      <div>
-        <button type="button" onClick={handleOpen}>
-          Open Modal
+      <div className="to-do"> 
+        <button type="button" onClick={handleOpen} className="to-do-btn">
+          To Do List<AiOutlineClose onClick={handleClose}/>
         </button>
         <Modal
           open={open}

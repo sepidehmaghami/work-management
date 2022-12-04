@@ -1,0 +1,40 @@
+.to-do{
+    text-align: -webkit-center;   
+}
+.to-do-btn{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    padding: 1.2rem;
+    background: linear-gradient(to right, #2193b0, #6dd5ed); 
+    color: #fff;
+    font-size: 30px;
+    border: 0;    
+}
+.modal{
+display: flex;
+flex-direction: column;
+}
+
+.manage-to-do{
+    display: flex;
+    justify-content: space-between;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.add-task{
+    cursor: pointer;
+    border: 0;
+    border-radius: 6px;
+    width: 30%;
+    place-self: center;
+    background-color: #2193b0;
+    color: #fff;
+    padding: 0.7rem 1.6rem;
+    margin-top: 30px;
+}
