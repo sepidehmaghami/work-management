@@ -1,5 +1,6 @@
-import React , {useState} from 'react';
+import React , {useState , useEffect} from 'react';
 import './toDoList.css'; 
+import TaskList from './taskList/taskList';
 import Header from '../../components/Header/header';
 import { makeStyles } from '@material-ui/core/styles';
 import Modal from '@material-ui/core/Modal';
@@ -66,6 +67,33 @@ function ToDoList() {
     setAnchorEl2(null);
   };
 
+  const [task , setTask] = useState([
+    {
+      "title": "HTML 5",
+      "check": false,
+      "id": 1
+    },
+  ]);
+  useEffect (() =>{
+   
+  },[]);
+
+  const deleteHandle =  async (id) =>{
+   
+}
+
+const addHandle = async (title) =>{
+ 
+}
+
+const editHandle =  async (id ,title) =>{
+ 
+  }
+
+  const doneHandle = async(id ,title)=>{
+   
+  }
+
   const body = (
     <div style={modalStyle} className={classes.paper}>
       <div className='modal'>
@@ -107,7 +135,7 @@ function ToDoList() {
         </Menu>
           </div>        
         </div>
-        <button onClick={handleClose} className="add-task">ADD</button>
+        <button className="add-task" onClick={addHandle}>ADD</button>
       </div>
     </div>
   );
@@ -128,8 +156,9 @@ function ToDoList() {
           {body}
         </Modal>
       </div>
+      <TaskList duty={task} onDelete={deleteHandle} onEdit={editHandle} onDone={doneHandle}/>
     </div>
-  )
+  );
 }
 
 export default ToDoList

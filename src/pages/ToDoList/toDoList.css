@@ -21,6 +21,10 @@ flex-direction: column;
     justify-content: space-between;
 }
 
+.manage-to-do Button{
+    color: #2193b0;
+}
+
 .title{
     display: flex;
     flex-direction: column;
