@@ -1,7 +1,7 @@
 import { useState } from 'react';
-// import './Tasks.css';
+import './tasks.css';
 
-const Tasks = ({titles , txt , onDelete , onEdit ,onDone}) =>{
+const Tasks = ({action , titles , date , txt ,onDone}) =>{
 
     const [check , setCheck]= useState();
     const doneTask =() =>{
@@ -32,37 +32,18 @@ const Tasks = ({titles , txt , onDelete , onEdit ,onDone}) =>{
             }
         }
     };
-
-      const [isPTag, setPTag] = useState(true);
-
-      const [title,setTitle] = useState('');
       
-    const submitInput =(event) =>{
-        event.preventDefault();
-        setPTag(true);
-        onEdit(txt.id,{title,check:check});
-    }
 
     return(
         <div className="tasks-control">
-            <input type="checkbox" onClick={doneTask}/>
-                {isPTag ? (
-                    <div className='duty'  style={extra_styles(check)}>{titles}</div>
-                        ) : (
-                    <input  
-                    type="text" 
-                    placeholder={titles} 
-                    value={title}
-                    className="input-form"
-                    onChange={(event) => setTitle(event.target.value)}
-                    />
-                )}
-            {isPTag ? (
-            <button className='btn-duty edit' onClick={() => setPTag(false)}>Edit</button>
-            ) : (
-            <button className='btn-duty edit' onClick={submitInput} type="submit">Add</button>
-            )}
-            <button className='btn-duty del' onClick={ () => onDelete(txt.id)}>Delete</button>
+            <div className='action'  style={extra_styles(check)}>{action}</div>
+            <div className='duty'  style={extra_styles(check)}>{titles}</div>
+            <div className='time'  style={extra_styles(check)}>{date}</div>
+            {!check ? 
+                (<button className='btn-duty' onClick={doneTask} type="submit">Done</button>)
+                :
+                (<button className='btn-duty' onClick={doneTask} type="submit">Active</button>)
+            }
         </div>
     )
 }

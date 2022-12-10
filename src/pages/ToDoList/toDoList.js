@@ -69,7 +69,9 @@ function ToDoList() {
 
   const [task , setTask] = useState([
     {
+      "action": "Shopping",
       "title": "HTML 5",
+      "date": "Today",
       "check": false,
       "id": 1
     },
@@ -78,17 +80,9 @@ function ToDoList() {
    
   },[]);
 
-  const deleteHandle =  async (id) =>{
-   
-}
-
 const addHandle = async (title) =>{
  
 }
-
-const editHandle =  async (id ,title) =>{
- 
-  }
 
   const doneHandle = async(id ,title)=>{
    
@@ -156,7 +150,7 @@ const editHandle =  async (id ,title) =>{
           {body}
         </Modal>
       </div>
-      <TaskList duty={task} onDelete={deleteHandle} onEdit={editHandle} onDone={doneHandle}/>
+      <TaskList duty={task} onDone={doneHandle}/>
     </div>
   );
 }

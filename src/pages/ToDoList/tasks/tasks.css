@@ -1,0 +1,23 @@
+.tasks-control{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    font-size: 20px;
+    background-color: #8768;
+}
+
+.duty{
+    margin: 0px 30px;
+}
+
+.action{
+    color: #ff6b81 !important;
+}
+
+.btn-duty{
+    background-color: #2193b0;
+    border: 0px;
+    border-radius: 5px;
+    padding: 5px 15px;
+    margin-left: 25px;
+}
