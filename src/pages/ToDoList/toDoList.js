@@ -8,13 +8,10 @@ import Button from '@material-ui/core/Button';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import { AiOutlineClose , AiOutlineDown} from "react-icons/ai";
-function rand() {
-  return Math.round(Math.random() * 20) - 10;
-}
 
 function getModalStyle() {
-  const top = 50 + rand();
-  const left = 50 + rand();
+  const top = 50;
+  const left = 50;
 
   return {
     top: `${top}%`,
@@ -26,11 +23,11 @@ function getModalStyle() {
 const useStyles = makeStyles((theme) => ({
   paper: {
     position: 'absolute',
-    width: 400,
+    width: 500,
     backgroundColor: theme.palette.background.paper,
     border: '2px solid #000',
     boxShadow: theme.shadows[5],
-    padding: theme.spacing(2, 4, 3),
+    padding: theme.spacing(4, 4, 4),
     color: '#2193b0',
   },
 }));
@@ -71,6 +68,13 @@ function ToDoList() {
     {
       "action": "Shopping",
       "title": "HTML 5",
+      "date": "Today",
+      "check": false,
+      "id": 1
+    },
+    {
+      "action": "Work",
+      "title": "SEO",
       "date": "Today",
       "check": false,
       "id": 1

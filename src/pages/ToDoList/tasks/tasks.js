@@ -5,7 +5,6 @@ const Tasks = ({action , titles , date , txt ,onDone}) =>{
 
     const [check , setCheck]= useState();
     const doneTask =() =>{
-        alert(check)
         if(!check){
             setCheck(true);
             const title =txt.title;

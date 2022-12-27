@@ -3,7 +3,23 @@
     justify-content: center;
     margin-top: 40px;
     font-size: 20px;
-    background-color: #8768;
+    background-color: #E6FFF8;
+    margin: 40px 30%;
+    padding: 20px ;
+}
+
+@media screen and (max-width: 900px) {
+    .tasks-control{
+        font-size: 17px;
+        margin: 40px 20%;
+    }   
+}
+
+@media screen and (max-width: 600px) {
+    .tasks-control{
+        font-size: 15px;
+        margin: 40px 14%;
+    }   
 }
 
 .duty{
