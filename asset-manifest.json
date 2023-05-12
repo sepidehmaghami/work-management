@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/work-management/static/css/main.72d01cec.css",
-    "main.js": "/work-management/static/js/main.abac01f6.js",
+    "main.js": "/work-management/static/js/main.1d042944.js",
     "static/media/stopwatch.png": "/work-management/static/media/stopwatch.2b706018601da2811019.png",
     "static/media/toDoList.png": "/work-management/static/media/toDoList.c7d866ac55658ee553a0.png",
     "index.html": "/work-management/index.html",
     "main.72d01cec.css.map": "/work-management/static/css/main.72d01cec.css.map",
-    "main.abac01f6.js.map": "/work-management/static/js/main.abac01f6.js.map"
+    "main.1d042944.js.map": "/work-management/static/js/main.1d042944.js.map"
   },
   "entrypoints": [
     "static/css/main.72d01cec.css",
-    "static/js/main.abac01f6.js"
+    "static/js/main.1d042944.js"
   ]
 }
