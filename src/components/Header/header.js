@@ -15,7 +15,7 @@ function Header(props) {
             <Clock/>
         </div>
         <ul >
-            <li ><Link to="/" onClick={toggleAuth}><BsBoxArrowRight/></Link></li>
+            <li ><Link to="/work-management" onClick={toggleAuth}><BsBoxArrowRight/></Link></li>
             <li><Link to="/home"><BsHouseDoor/></Link></li>
         </ul>
     </nav>
