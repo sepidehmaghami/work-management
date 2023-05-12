@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import './tasks.css';
 
-const Tasks = ({action , titles , date , txt ,onDone}) =>{
+const Tasks = ({action , titles , date , txt ,onDone , checks}) =>{
 
-    const [check , setCheck]= useState();
+    const [check , setCheck]= useState(checks);
     const doneTask =() =>{
         if(!check){
             setCheck(true);

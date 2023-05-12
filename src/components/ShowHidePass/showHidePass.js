@@ -8,13 +8,13 @@ export default function ShowHidePassword(props) {
     };
     
     const [pass, setPass] = useState();
-    const password = (e) => {
+    const checkPassword = (e) => {
       setPass(e.target.value)
     }
 
     return (
       <div className="form-group">
-        <input type={!isVisible ? "password" : "text"} placeholder={props.placeholder} onChange={password}/>
+        <input type={!isVisible ? "password" : "text"} placeholder={props.placeholder} onChange={checkPassword} pass={pass}/>
         <span className="icon" onClick={toggle}>
           {isVisible ? <AiFillEye/> : <AiFillEyeInvisible/>}
         </span>

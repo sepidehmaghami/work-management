@@ -63,26 +63,27 @@ function ToDoList() {
   const handleCloseDate = () => {
     setAnchorEl2(null);
   };
-
-  const [task , setTask] = useState([
-    {
-      "action": "Shopping",
-      "title": "HTML 5",
-      "date": "Today",
-      "check": false,
-      "id": 1
-    },
-    {
-      "action": "Work",
-      "title": "SEO",
-      "date": "Today",
-      "check": false,
-      "id": 1
-    },
-  ]);
+  const loadedBasket=[]
+  const [task , setTask] = useState([]);
   useEffect (() =>{
-   
-  },[]);
+    fetch("https://work-management-d90c4-default-rtdb.firebaseio.com/duty.json")
+    .then((response)=>{
+      return response.json();
+    })
+    .then((resData)=>{
+      for (let items in resData) {
+        console.log(items)
+        loadedBasket.push({
+          id:resData[items].id,
+          action:resData[items].action,
+          date:resData[items].date,
+          title:resData[items].title,
+          check:resData[items].check
+        })
+      }
+      setTask(loadedBasket)
+    })
+  },[task]);
 
 const addHandle = async (title) =>{
  

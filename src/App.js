@@ -8,7 +8,6 @@ import {AuthContext} from './context/auth-context'
 import {Route ,Routes,Navigate } from 'react-router-dom'
 function App() {
   const authContext = useContext(AuthContext)
-  console.log(authContext.isAuth)
   return (
     <div className="App">
 
